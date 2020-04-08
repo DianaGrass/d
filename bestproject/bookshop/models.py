@@ -50,3 +50,11 @@ class Comment(models.Model):
             Book,
             on_delete=models.CASCADE,
             related_name="Comment")
+    
+    def __str__(self):
+        return self.text[:10] + "..."
+    
+    
+    
+    
+    
